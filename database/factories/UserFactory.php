@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 /*
 |--------------------------------------------------------------------------
-| Model Factories
+| Models Factories
 |--------------------------------------------------------------------------
 |
 | This directory should contain each of the model factory definitions for
@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\Model\User::class, function (Faker $faker) {
+$factory->define(App\Models\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
