@@ -30,6 +30,10 @@
                             <input type="password" name="password_confirmation" class="form-control" value="{{ old('password_confirmation') }}">
                         </div>
 
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="remember" />记住我</label>
+                        </div>
+
                         <button type="submit" class="btn btn-primary">注册</button>
                     </form>
                 </div>
