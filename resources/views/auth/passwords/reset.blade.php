@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <label for="password_confirm" class="control-label col-md-4">密码：</label>
+                            <label for="password_confirm" class="control-label col-md-4">确认密码：</label>
                             <div class="col-md-6">
                                 <input id="password_confirm" type="password" name="password_confirmation" class="form-control" required />
                                 @if($errors->has('password_confirmation'))
