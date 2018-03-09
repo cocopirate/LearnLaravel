@@ -23,7 +23,7 @@ class StatusesController extends Controller
             'content' => $request->content_text,
         ]);
 
-        session()->flash('success', '微博发布成功！');
+        //session()->flash('success', '微博发布成功！');
 
         return redirect()->back();
 

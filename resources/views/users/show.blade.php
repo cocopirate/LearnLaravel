@@ -8,7 +8,12 @@
         <section class="user_info">
             @include('shared._user_info', ['user' => $user])
         </section>
-
+        <section class="stats">
+            @include('shared._stats')
+        </section>
+        @if(Auth::check())
+            @include('shared._follow_form')
+        @endif
         @if(count($statuses) > 0)
             <ol class="statuses">
                 @foreach($statuses as $status)
